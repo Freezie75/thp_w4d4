@@ -1,11 +1,25 @@
 <p>Bienvenue sur la page de création d'utilisateurs !</p>
 
 <form action="/new" method="post">
+
+    <% if @user.errors.any? %>
+        <div>
+            <%= pluralize(@user.errors.count, "Error") %> 
+            <p>Cet utilsateur ne peut pas être créé : </p>
+            <ul>
+                <% @user.errors.full_messages.each do |msg| %>
+                    <li> <%= msg %> </li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     Ton nom d'utilisateur:</br>
     <input type="text" name="user_name"></br>
     Quelques mots à propos de toi:</br>
     <textarea name="bio"></textarea></br>
     <input type="submit" value="Create">
+
 </form>
 
