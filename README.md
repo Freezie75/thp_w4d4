@@ -8,7 +8,8 @@
 <a href="https://github.com/alexandradlg/thp_w4d4/tree/master/static_pages">Pages statiques</a></br>
 Nous allons te demander de faire une application simple, ce qui va te faire manipuler les liens, et les routes. Et vite fait le controller.
 
-Note : le projet est à faire en pair-programming.
+Note : le projet est à faire en pair-programming.</br>
+
 <a href="https://github.com/alexandradlg/thp_w4d4/tree/master/app_with_backend">Faire un premier site avec backend</a></br>
 
 Tu vas faire un site où l'on pourra créer des utilisateurs
