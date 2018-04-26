@@ -11,7 +11,6 @@ Nous allons te demander de faire une application simple, ce qui va te faire mani
 Note : le projet est à faire en pair-programming.</br>
 
 <a href="https://github.com/alexandradlg/thp_w4d4/tree/master/app_with_backend">Faire un premier site avec backend</a></br>
-
 Tu vas faire un site où l'on pourra créer des utilisateurs
 Note : le projet est à faire en pair-programming.
 
