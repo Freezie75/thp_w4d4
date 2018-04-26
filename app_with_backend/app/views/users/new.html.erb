@@ -8,7 +8,10 @@
             <p>Cet utilsateur ne peut pas être créé : </p>
             <ul>
                 <% @user.errors.full_messages.each do |msg| %>
-                    <li> <%= msg %> </li>
+                    <% if msg == "Name is invalid" %>
+                        <li> <%= "Ne doit pas contenir d'espace ni de catactères spéciaux" %> </li>
+                    <% else %> <%= msg %>
+                    <% end %>
                 <% end %>
             </ul>
         </div>

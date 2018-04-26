@@ -6,13 +6,13 @@ class UsersController < ApplicationController
     def create
         @user = User.new(name: params["user_name"], bio: params["bio"])
         if @user.save
-            redirect_to user_path(@user)
+            redirect_to user_path(@user.name)
         else
             render 'new'
         end
     end
 
     def show 
-        @user = User.find(params[:id])
+        @user = User.find_by_name(params[:name])
     end
 end
