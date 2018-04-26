@@ -14,4 +14,7 @@ class StaticPagesController < ApplicationController
   def wonder_woman
   end
 
+  def justice_league
+  end
+
 end
