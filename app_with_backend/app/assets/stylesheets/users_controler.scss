@@ -1,3 +1,70 @@
-// Place all the styles related to the users_controler controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+    margin: auto;
+  }
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+input {
+    outline: 0;
+  }
+
+textarea {
+  outline: 0;
+  overflow: auto; 
+}
+
+textarea::placeholder {
+    opacity: 0.3;
+}
+
+.new_user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 2em;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    font-size: 2em;
+}
+
+
+.errors {
+    color: red;
+    opacity: 0.7;
+    padding-bottom: 1em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1,2em;
+    margin-top: 150px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-left: 100px;
+    font-size: 1.5em;
+}
+
+.user_bio {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1em;
+}
